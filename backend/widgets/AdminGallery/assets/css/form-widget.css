@@ -1,0 +1,152 @@
+.form-gallery-list {
+    list-style-type: none;
+    margin: 15px -7.5px 0px -7.5px;
+    padding: 0; 
+    width: 100%; 
+    overflow: hidden;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+}
+
+
+.form-gallery-list li { 
+    margin: 0px 0px 15px 0px;
+    padding: 0 7.5px;
+    float: left;
+    position: relative;
+}
+
+.form-gallery-list li img {
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: 3px;
+}
+
+.delete-image-label {
+    position: absolute;
+    right: 15px;
+    bottom: 7.5px;
+    background-color: #337ab7;
+    color: #fff;
+    font-weight: 400;
+    margin: 0;
+    padding: 5px 30px 5px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.form-gallery-item.checked .delete-image-label {
+    background-color: #d9534f;
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+.delete-image-label input[type="checkbox"] {
+    display: none;
+}
+
+.delete-image-label .checkmark {
+    position: absolute;
+    top: 7.5px;
+    right: 7.5px;
+    height: 15px;
+    width: 15px;
+    background-color: #eee;
+    -webkit-transition: all 0.1s ease;
+    -o-transition: all 0.1s ease;
+    transition: all 0.1s ease;
+}
+
+.delete-image-label .checkmark:after {
+    content: "";
+    position: absolute;
+    -webkit-transition: all 0.1s ease;
+    -o-transition: all 0.1s ease;
+    transition: all 0.1s ease;
+    opacity: 0;
+}
+
+.delete-image-label input:checked ~ .checkmark {
+    background-color: #d9534f;
+}
+
+.delete-image-label input:checked ~ .checkmark:after {
+    opacity: 1;
+}
+
+.delete-image-label .checkmark:after {
+    left: 5px;
+    top: 0px;
+    width: 7px;
+    height: 12px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.image-alt-input {
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: 3px;
+    position: absolute;
+    left: 15px;
+    top: 10px;
+    z-index: 999;
+    width: calc(100% - 30px);
+}
+
+.ui-state-default {
+    border: none;
+    background: none;
+}
+
+input#gallery-form-widget-input-files {
+    display: none;
+}
+
+.buttons-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+}
+
+.buttons-wrapper label, .buttons-wrapper button {
+    color: #fff;
+    background-color: #337ab7;
+    border: none;
+    border-radius: 3px;
+    padding: 5px 15px;
+    margin: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 400;
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    outline: none;
+}
+
+.buttons-wrapper label:hover, .buttons-wrapper button:hover, .buttons-wrapper label:focus, .buttons-wrapper button:focus{
+    background-color: #286090;
+    outline: none;
+}
+
+.buttons-wrapper .red-button {
+    background-color: #d9534f;
+}
+
+.buttons-wrapper .red-button:hover, .buttons-wrapper .red-button:focus {
+    background-color: #c9302c;
+    outline: none;
+}
