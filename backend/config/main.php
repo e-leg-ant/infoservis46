@@ -47,7 +47,7 @@ return [
         ],
         'urlManagerFrontend' => [
             'class' => 'yii\web\urlManager',
-            'baseUrl' => 'https://tablichki.net',
+            'baseUrl' => 'https://infoservis46.ru',
             'enablePrettyUrl' => true,
             'showScriptName' => false,
             'rules' => [

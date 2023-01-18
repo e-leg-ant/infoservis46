@@ -14,7 +14,8 @@ $phone = Settings::get('config_telephone');
 $phone2 = Settings::get('config_fax');
 $phone3 = Settings::get('config_telephone3');
 $email = Settings::get('config_email');
-
+$email = Settings::get('config_email');
+$address = Settings::get('config_address');
 ?>
 
 <div class="callback">
@@ -67,19 +68,17 @@ $email = Settings::get('config_email');
                 </svg>
                 <span><?= $email; ?></span>
             </a>
-            <a href="https://tablichki.net/#">
+            <a href="#">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 18">
                     <g clip-path="url(#clip0)"><path d="M8.736 0C3.92 0 0 3.92 0 8.736c0 4.817 3.92 8.736 8.736 8.736 4.817 0 8.736-3.919 8.736-8.736S13.553 0 8.736 0zm0 16.38c-4.215 0-7.644-3.429-7.644-7.644s3.43-7.644 7.644-7.644c4.215 0 7.645 3.43 7.645 7.644 0 4.215-3.43 7.645-7.645 7.645z"></path><path d="M9.282 3.276H8.19v5.686l3.436 3.436.772-.772L9.282 8.51V3.276z"></path></g>
                     <defs><clipPath id="clip0"><path d="M0 0h17.473v17.473H0z"></path></clipPath></defs>
                 </svg>
                 <span>Пн - Пт c 10:00 по 19:00</span>
             </a>
-            <a href="https://tablichki.net/#">
-                <span style="margin-left: 0px;">Москва, Наставнический переулок, 6</span>
+            <a href=#">
+                <span style="margin-left: 0px;"><?= $address; ?></span>
             </a>
-            <a href="https://tablichki.net/#">
-                <span style="margin-left: 0px;">Подольск, ул. Пионерская, 11/1</span>
-            </a>
+
         </div>
 
     </div>

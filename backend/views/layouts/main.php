@@ -127,7 +127,7 @@ $bundle = yiister\gentelella\assets\Asset::register($this);
                         <ul class="nav navbar-nav navbar-right">
                             <li class="">
                                 <a href="javascript:;" class="user-profile dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
-                                    <img src="https://tablichki.net/favicon.png" alt=""><?/* Yii::$app->user->identity->username;*/ ?>
+                                    <img src="https://infoservis46.ru/favicon.png" alt=""><?/* Yii::$app->user->identity->username;*/ ?>
                                     <span class=" fa fa-angle-down"></span>
                                 </a>
                                 <ul class="dropdown-menu dropdown-usermenu pull-right">
